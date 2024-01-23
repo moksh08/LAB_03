@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://www.cdc.gov/healthyweight/images/assessing/bmi-adult-fb-600x315.jpg?_=07167) center/cover no-repeat;
+}
+
+.calculator-container {
+    width: 350px;
+    border-radius: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: pink;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 28px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 480px) {
+    .calculator-container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .calculator-container {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .calculator-container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .calculator-container {
+        width: 700px;
+    }
+}
